@@ -1,0 +1,51 @@
+{
+  "rootFolder": "/Users/christinemarquez/Desktop/dev-projects/client-work/mr-glass",
+  "analyzedAt": "2026-07-06T20:59:41.716Z",
+  "rootStructure": [],
+  "rootFileSnippets": {},
+  "importantFolders": [],
+  "readmeParagraphs": {},
+  "totals": {
+    "numFiles": 0,
+    "numDirs": 0,
+    "totalSizeBytes": 0,
+    "totalLinesOfCode": 0
+  },
+  "fileCategories": {},
+  "linesOfCodePerLanguage": {},
+  "filesPerLanguage": {},
+  "projectTypes": [],
+  "frameworks": [],
+  "entryPoints": [],
+  "ciCdTools": [],
+  "packageManagers": [],
+  "topLevelDirectories": [],
+  "detailedDirectories": [],
+  "architecturalInsights": {
+    "coreApplications": [],
+    "entryPointDetails": [],
+    "serviceArchitecture": {
+      "microservices": [],
+      "monoliths": [],
+      "libraries": []
+    },
+    "layeredArchitecture": {
+      "presentation": [],
+      "business": [],
+      "data": [],
+      "infrastructure": []
+    }
+  },
+  "largeFiles": [],
+  "dependencies": {
+    "production": [],
+    "development": [],
+    "total": 0
+  },
+  "complexity": {
+    "averageFileSize": 0,
+    "maxFileSize": 0,
+    "nestedDepth": 0,
+    "estimatedComplexity": "low"
+  }
+}
