@@ -331,6 +331,15 @@ function ServiceCard({ service }) {
 function HeroMedia() {
   return (
     <div className="hero-media" aria-label="Mister Glass service preview">
+      <div className="hero-brand-badge">
+        <Image
+          src="/images/brand/logos/logo-badge-concept.png"
+          alt="Mister Glass badge logo"
+          width={415}
+          height={365}
+          sizes="(max-width: 980px) 38vw, 16vw"
+        />
+      </div>
       <div className="hero-image hero-image--main">
         <Image
           src="/images/services/windshield-install.jpg"
@@ -363,6 +372,16 @@ function HeroMedia() {
         <strong>Mobile glass service</strong>
         <span>Auto, home, and custom glass estimates with real job details.</span>
       </GlassPanel>
+      <div className="hero-mascot">
+        <Image
+          src="/images/brand/mascots/mascot-front-large.png"
+          alt="Mister Glass mascot holding glass and giving a thumbs up"
+          width={650}
+          height={540}
+          priority
+          sizes="(max-width: 980px) 48vw, 19vw"
+        />
+      </div>
     </div>
   );
 }
@@ -464,6 +483,15 @@ export default function HomePage() {
         <div className="section-heading">
           <p>Services and materials</p>
           <h2>Room to list the exact services now, and refine pricing later.</h2>
+          <div className="section-brand-stamp" aria-hidden="true">
+            <Image
+              src="/images/brand/logos/logo-horizontal-concept.png"
+              alt=""
+              width={640}
+              height={360}
+              sizes="(max-width: 980px) 42vw, 16vw"
+            />
+          </div>
         </div>
         <div className="services-grid">
           {SERVICES.map((service) => (
@@ -474,9 +502,29 @@ export default function HomePage() {
 
       <section className="materials-section">
         <GlassPanel className="materials-panel">
-          <div>
+          <div className="materials-copy">
             <p>Estimate logic</p>
             <h2>Soft ranges first. Locked pricing when the job details are real.</h2>
+            <div className="materials-brand-row">
+              <div className="materials-brand-logo">
+                <Image
+                  src="/images/brand/logos/logo-badge-concept.png"
+                  alt="Mister Glass logo badge"
+                  width={415}
+                  height={365}
+                  sizes="(max-width: 980px) 28vw, 9vw"
+                />
+              </div>
+              <div className="materials-brand-mascot">
+                <Image
+                  src="/images/brand/mascots/mascot-side.png"
+                  alt="Mister Glass mascot side view"
+                  width={250}
+                  height={520}
+                  sizes="(max-width: 980px) 22vw, 6vw"
+                />
+              </div>
+            </div>
           </div>
           <div className="materials-photo" aria-hidden="true">
             <Image
@@ -519,7 +567,26 @@ export default function HomePage() {
       </section>
 
       <footer className="site-footer">
-        <strong>Mister Glass</strong>
+        <div className="footer-brand">
+          <div className="footer-brand-logo">
+            <Image
+              src="/images/brand/logos/logo-horizontal-concept.png"
+              alt="Mister Glass home and auto glass logo"
+              width={640}
+              height={360}
+              sizes="(max-width: 640px) 58vw, 12vw"
+            />
+          </div>
+          <div className="footer-brand-mascot">
+            <Image
+              src="/images/brand/mascots/mascot-front-small.png"
+              alt="Mister Glass mascot"
+              width={430}
+              height={570}
+              sizes="(max-width: 640px) 20vw, 4vw"
+            />
+          </div>
+        </div>
         <div>
           <a href={CONTACT.phoneHref}>{CONTACT.phoneDisplay}</a>
           <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>

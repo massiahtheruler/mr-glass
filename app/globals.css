@@ -362,6 +362,28 @@ main {
   min-height: min(620px, 66vh);
 }
 
+.hero-brand-badge {
+  position: absolute;
+  top: -2%;
+  right: 12%;
+  z-index: 3;
+  width: clamp(96px, 12vw, 164px);
+  filter: drop-shadow(0 16px 28px rgba(8, 26, 53, 0.14));
+}
+
+.hero-brand-badge img,
+.hero-mascot img,
+.section-brand-stamp img,
+.materials-brand-logo img,
+.materials-brand-mascot img,
+.footer-brand-logo img,
+.footer-brand-mascot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .hero-media::before {
   content: "";
   position: absolute;
@@ -438,6 +460,15 @@ main {
 .hero-proof-card span {
   color: var(--muted);
   line-height: 1.5;
+}
+
+.hero-mascot {
+  position: absolute;
+  right: -1%;
+  bottom: 2%;
+  z-index: 4;
+  width: clamp(124px, 19vw, 250px);
+  filter: drop-shadow(0 24px 36px rgba(8, 26, 53, 0.18));
 }
 
 .glass-panel {
@@ -687,6 +718,16 @@ main {
   gap: 8px;
   max-width: 760px;
   margin-bottom: 28px;
+  position: relative;
+}
+
+.section-brand-stamp {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: clamp(130px, 14vw, 220px);
+  opacity: 0.92;
+  filter: drop-shadow(0 14px 24px rgba(8, 26, 53, 0.12));
 }
 
 .services-grid {
@@ -797,6 +838,27 @@ main {
   grid-column: span 2;
 }
 
+.materials-copy {
+  display: grid;
+  gap: 18px;
+}
+
+.materials-brand-row {
+  display: flex;
+  align-items: end;
+  gap: 14px;
+}
+
+.materials-brand-logo {
+  width: clamp(84px, 9vw, 140px);
+  filter: drop-shadow(0 14px 24px rgba(8, 26, 53, 0.12));
+}
+
+.materials-brand-mascot {
+  width: clamp(44px, 4.8vw, 76px);
+  filter: drop-shadow(0 12px 18px rgba(8, 26, 53, 0.12));
+}
+
 .materials-photo {
   position: relative;
   min-height: 220px;
@@ -872,9 +934,21 @@ main {
   color: rgba(8, 26, 53, 0.7);
 }
 
-.site-footer strong {
-  color: var(--navy);
-  font-size: 1.1rem;
+.footer-brand {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+}
+
+.footer-brand-logo {
+  width: clamp(160px, 18vw, 240px);
+  filter: drop-shadow(0 12px 20px rgba(8, 26, 53, 0.1));
+}
+
+.footer-brand-mascot {
+  width: clamp(34px, 4vw, 56px);
+  margin-left: -6px;
+  filter: drop-shadow(0 10px 14px rgba(8, 26, 53, 0.14));
 }
 
 .site-footer div {
@@ -907,6 +981,16 @@ main {
     min-height: 500px;
   }
 
+  .hero-brand-badge {
+    top: 0;
+    right: 14%;
+  }
+
+  .hero-mascot {
+    right: 4%;
+    bottom: 4%;
+  }
+
   .trust-row {
     grid-row: auto;
     margin-top: -20px;
@@ -918,6 +1002,16 @@ main {
 
   .services-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-brand-stamp {
+    position: static;
+    width: 170px;
+    margin-top: 2px;
+  }
+
+  .materials-list {
+    grid-column: span 1;
   }
 }
 
@@ -1005,6 +1099,12 @@ main {
     min-height: 390px;
   }
 
+  .hero-brand-badge {
+    top: 4px;
+    right: 10px;
+    width: 104px;
+  }
+
   .hero-image--main {
     inset: 4% 0 auto 0;
     height: 60%;
@@ -1033,6 +1133,28 @@ main {
     bottom: 0;
     max-width: none;
     padding: 16px;
+  }
+
+  .hero-mascot {
+    right: 0;
+    bottom: 6px;
+    width: 128px;
+  }
+
+  .section-brand-stamp {
+    width: 148px;
+  }
+
+  .materials-brand-row {
+    gap: 10px;
+  }
+
+  .materials-brand-logo {
+    width: 88px;
+  }
+
+  .materials-brand-mascot {
+    width: 46px;
   }
 
   .site-footer div {
